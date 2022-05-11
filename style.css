@@ -84,18 +84,18 @@ button {
   border-radius: 24px;
 }
 
-.nature, .fire, .rain, .coffee{
+.nature, .fire, .rain, .house{
   background-color: var(--bg-card-primary);
 }
 
-.nature:hover, .rain:hover, .coffee:hover, .fire:hover {
+.nature:hover, .rain:hover, .house:hover, .fire:hover {
   background-color: var(--bg-card-secondary);
   transform: scale(1.1);
 }
 
 .rain:hover svg path,
 .nature:hover svg path,
-.coffee:hover svg path,
+.house:hover svg path,
 .fire:hover svg path {
   fill: var(--bg-color);
   background: var(--bg-color);

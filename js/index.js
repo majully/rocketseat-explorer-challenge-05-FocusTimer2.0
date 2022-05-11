@@ -86,20 +86,16 @@ bttnPause.addEventListener('click', function() {
   sound.pressButton()
 })
 
-bttnRain.addEventListener('click', function(){
+bttnRain.addEventListener('click', function() {
   sound.pressRain()
-  
-  
 })
 
-bttnNature.addEventListener('click', function(){
+bttnNature.addEventListener('click', function() {
   sound.pressNature()
 })
 
-bttnHouse.addEventListener('click', function(){
+bttnHouse.addEventListener('click', function() {
   sound.pressHouse()
-  
-  
 })
 
 bttnFire.addEventListener('click', function(){
