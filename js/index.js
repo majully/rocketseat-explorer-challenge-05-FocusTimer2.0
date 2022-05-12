@@ -15,9 +15,6 @@ const {
   bttnRain,
   bttnHouse,
   bttnFire,
-  bttnSun,
-  bttnMoon,
-  sliderNature,
   sliderRain,
   sliderHouse,
   sliderFire,
@@ -28,15 +25,12 @@ const timer = Timer({
   minutesDisplay,
   secondsDisplay,
   timerTimeOut,
-  bttnMoon,
-  bttnSun,
   $html,
   bttnPause,
   bttnPlay
 })
 
-const sound = Sounds({ 
-  sliderNature,
+const sound = Sounds({
   sliderRain,
   sliderHouse,
   sliderFire,
@@ -44,7 +38,6 @@ const sound = Sounds({
   bttnRain,
   bttnHouse,
   bttnFire,
-  
 })
 
 bttnUpTime.addEventListener('click', () => {
@@ -53,10 +46,8 @@ bttnUpTime.addEventListener('click', () => {
   sound.pressButton()
   if (minutesDisplay.textContent >= 100) { 
     minutesDisplay.textContent = 95
-    alert('O limite de tempo é até 95 minutos')
+    alert('Limite é até 95 minutos')
   }
-
-
 })
 
 bttnDownTime.addEventListener('click', () => {
@@ -64,9 +55,8 @@ bttnDownTime.addEventListener('click', () => {
   sound.pressButton()
   if (minutesDisplay.textContent <= 0) { 
     minutesDisplay.textContent = 25
-    alert('Não ultrapasse do zero!')
+    alert('Não é aceito menor a zero!')
   }
-  
 })
 
 bttnPlay.addEventListener('click', function() {
@@ -98,18 +88,6 @@ bttnHouse.addEventListener('click', function() {
   sound.pressHouse()
 })
 
-bttnFire.addEventListener('click', function(){
+bttnFire.addEventListener('click', function() {
   sound.pressFire()
-  
-  
 })
-
-bttnSun.addEventListener('click', function() { 
-  timer.pressButtonSun()
-})
-
-bttnMoon.addEventListener('click', function() { 
-  timer.pressButtonMoon()
-})
-
-console.log()

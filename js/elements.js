@@ -10,9 +10,6 @@ const bttnNature = document.querySelector('.nature')
 const bttnRain = document.querySelector('.rain')
 const bttnHouse = document.querySelector('.house')
 const bttnFire = document.querySelector('.fire')
-const bttnSun = document.querySelector('.sun')
-const bttnMoon = document.querySelector('.moon')
-const sliderNature = document.querySelector('#volumeNature')
 const sliderRain = document.querySelector('#volumeRain')
 const sliderHouse = document.querySelector('#volumeHouse')
 const sliderFire = document.querySelector('#volumeFire')
@@ -31,9 +28,6 @@ export const elements = {
   bttnRain,
   bttnHouse,
   bttnFire,
-  bttnSun,
-  bttnMoon,
-  sliderNature,
   sliderRain,
   sliderHouse,
   sliderFire,
